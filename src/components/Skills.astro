@@ -1,0 +1,62 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>D'une idée à la production</h2>
+		<p>En tant que développeur informatique, j'ai acquis une solide expertise dans la conception et le développement de logiciels et d'applications métier. Ma maîtrise des langages de programmation tels que C#, Java, et TypeScript me permet de créer des solutions efficaces et évolutives.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Apprendre c'est mieux comprendre</h2>
+		<p>Mon désir d'acquérir de nouvelles compétences me pousse constamment à rester à jour avec les dernières avancées technologiques.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Des données qui répondent à tout ou presque.</h2>
+		<p>Mon expertise en analyse de données repose sur ma capacité à extraire des informations précieuses à partir de données brutes. J'ai une solide expérience dans l'utilisation de langages de programmation comme Python et R pour manipuler et analyser des ensembles de données volumineux</p>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>
